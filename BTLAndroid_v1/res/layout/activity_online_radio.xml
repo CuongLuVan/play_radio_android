@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#804040"
+    tools:context=".OnlineRadio" >
+
+    <TextView
+        android:id="@+id/current_station"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="3"
+        android:text="Channel"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/radio_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_below="@id/current_station"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <!-- <ToggleButton -->
+        <!-- android:id="@+id/img_btn_record" -->
+        <!-- android:layout_width="30dp" -->
+        <!-- android:layout_height="30dp" -->
+        <!-- android:background="@null" -->
+        <!-- android:button="@drawable/check_recordready_recording" -->
+        <!-- android:checked="true" -->
+        <!-- android:textOff="" -->
+        <!-- android:textOn="" /> -->
+
+        <ImageButton android:id="@+id/img_btn_record" 
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:src="@drawable/img_btn_record_ready"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/time_hover"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:baselineAlignBottom="@null"
+                android:src="@drawable/img_btn_time_hover" />
+
+            <EditText
+                android:id="@+id/hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_btn_volume" />
+
+            <SeekBar
+                android:id="@+id/volume"
+                android:layout_width="fill_parent"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:max="100"
+                android:progress="10"
+                android:thumb="@drawable/theme" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#804040"
+                android:src="@drawable/img_btn_previous"
+                android:layout_weight="0.3"
+                 />
+
+            <ToggleButton
+                android:id="@+id/play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#804040"
+                android:button="@drawable/img_btn_pause"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" 
+                android:layout_weight="0.3"/>
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#804040"
+                android:src="@drawable/img_btn_next"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

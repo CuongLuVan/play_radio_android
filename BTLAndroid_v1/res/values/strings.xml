@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BTLAndroid_v1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="time_record">00:00</string>
+
+    <string-array name="radio_name">
+        <item>VOV Giao thông Hà Nội</item>
+        <item>VOV Giao Thông HCM</item>
+        <item>VOV1</item>
+        <item>VOV2</item>
+        <item>VOV3</item>
+        <item>VOV5</item>
+        <item>VOVTV</item>
+    </string-array>
+    <string-array name="radio_url">
+        <item>http://uk2.internet-radio.com:31491</item>
+        <item>http://80.86.106.35:800</item>
+        <item>http://206.223.188.170:8002</item>
+        <item>http://64.95.243.144:8002</item>
+        <item>http://s4.voscast.com:7746</item>
+        <item>http://s4.voscast.com:7746</item>
+        <item>http://naxidigital128.kbcnet.rs:8020</item>
+    </string-array>
+
+</resources> <!-- http://online-hitfm.tavrmedia.ua:8000/HitFM -->
+
+
+<!-- cac kenh cua Viet Nam co luc khong nghe duoc -->
+<!-- <item>http://123.30.50.59:1935/live/vovgt/playlist.m3u8</item> -->
+<!-- <item>http://123.30.50.59:1935/live/vovgtsg/playlist.m3u8</item> -->
+<!-- <item>http://123.30.50.59:1935/live/vov1/playlist.m3u8</item> -->
+<!-- <item>http://123.30.50.59:1935/live/vov2/playlist.m3u8</item> -->
+<!-- <item>http://123.30.50.59:1935/live/vov3/playlist.m3u8</item> -->
+<!-- <item>http://123.30.50.59:1935/live/vov5/playlist.m3u8</item> -->
+<!-- <item>http://123.30.50.59:1935/live/vovtv/playlist.m3u8</item> -->
+
+
+<!-- kenh quoc te nghe duoc de test -->
+<!-- <item>http://online-hitfm.tavrmedia.ua:8000/HitFM</item> -->
+<!-- <item>http://online-hitfm.tavrmedia.ua:8000/HitFM</item> -->
+<!-- <item>http://online-hitfm.tavrmedia.ua:8000/HitFM</item> -->
+<!-- <item>http://online-hitfm.tavrmedia.ua:8000/HitFM</item> -->
+<!-- <item>http://online-hitfm.tavrmedia.ua:8000/HitFM</item> -->
+<!-- <item>http://online-hitfm.tavrmedia.ua:8000/HitFM</item> -->
+<!-- <item>http://online-hitfm.tavrmedia.ua:8000/HitFM</item> -->
